@@ -85,7 +85,36 @@
         <p>Following are the "arduous" steps I took to complete the project.</p>
 
         <blockquote class="blockquote">
-          <p class="mb-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
+          <p class="mb-0">1: Install Raspbian Lite</p>
+          <p class="mb-0">2: After installing Lite, go ahead and Google “Raspbian Lite with RPD/LXDE/XFCE/MATE/i3/Openbox/X11 GUI”. Follow the steps and install the GUI you desire.</p>
+          <p class="mb-0">3: Restart. Open terminal. Type: ifconfig and jot down your IP. You are going to need it. </p>
+          <p class="mb-0">4: Type: sudo apt-get install motion</p>
+          <p class="mb-0">5: Check your camera's status. If you are using camera connected to USB port, Type: lsusb</p>
+          <p class="mb-0">*** If you are using V2 or similar stuff, Type: raspistill -o test.jpg</p>
+          <p class="mb-0">*** Not working? Type: sudo rasp-config, go to interface options and fiddle with the camera settings</p>
+          <p class="mb-0">6: Type: sudo nano /etc/motion/motion.conf</p>
+          <p class="mb-0">*** daemon off -> daemon on</p>
+          <p class="mb-0">*** width 320 -> 640</p>
+          <p class="mb-0">*** height 240 -> 480</p>
+          <p class="mb-0">*** framerate 2 -> 100</p>
+          <p class="mb-0">*** ffmpeg_output_movies on -> off (Turn it off so you stop recording & saving video files)</p>
+          <p class="mb-0">*** stream_maxrate 1 -> 100</p>
+          <p class="mb-0">*** stream_localhost on -> off</p>
+          <p class="mb-0">*** webcontrol_localhost on -> off</p>
+          <p class="mb-0">*** save and exit motion.conf </p>
+          <p class="mb-0">*** Tip: To look for keywords use :CTRL+W</p>
+          <p class="mb-0">7: Type: sudo nano /etc/default/motion</p>
+          <p class="mb-0">*** Start_motion_daemon=no -> yes</p>
+          <p class="mb-0">8: Type: sudo nano /etc/rc.local</p>
+          <p class="mb-0">*** Write in "sudo motion"</p>
+           <img class="img-fluid rounded" src=" " alt="Write here" width="500" height="600">
+          
+          
+          <p class="mb-0">10: Type: sudo nano /etc/default/motion</p>
+          <p class="mb-0">11: Type: sudo nano /etc/default/motion</p>
+          <p class="mb-0">12: Type: sudo nano /etc/default/motion</p>
+          <p class="mb-0">13: Type: sudo nano /etc/default/motion</p>
+          
           <footer class="blockquote-footer">Someone famous in
             <cite title="Source Title">Source Title</cite>
           </footer>
@@ -109,59 +138,9 @@
             </form>
           </div>
         </div>
-
-        <!-- Single Comment -->
-        <div class="media mb-4">
-          <img class="d-flex mr-3 rounded-circle" src="http://placehold.it/50x50" alt="">
-          <div class="media-body">
-            <h5 class="mt-0">Commenter Name</h5>
-            Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.
-          </div>
-        </div>
-
-        <!-- Comment with nested comments -->
-        <div class="media mb-4">
-          <img class="d-flex mr-3 rounded-circle" src="http://placehold.it/50x50" alt="">
-          <div class="media-body">
-            <h5 class="mt-0">Commenter Name</h5>
-            Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.
-
-            <div class="media mt-4">
-              <img class="d-flex mr-3 rounded-circle" src="http://placehold.it/50x50" alt="">
-              <div class="media-body">
-                <h5 class="mt-0">Commenter Name</h5>
-                Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.
-              </div>
-            </div>
-
-            <div class="media mt-4">
-              <img class="d-flex mr-3 rounded-circle" src="http://placehold.it/50x50" alt="">
-              <div class="media-body">
-                <h5 class="mt-0">Commenter Name</h5>
-                Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.
-              </div>
-            </div>
-
-          </div>
-        </div>
-
-      </div>
-
+        
       <!-- Sidebar Widgets Column -->
       <div class="col-md-4">
-
-        <!-- Search Widget -->
-        <div class="card my-4">
-          <h5 class="card-header">Search</h5>
-          <div class="card-body">
-            <div class="input-group">
-              <input type="text" class="form-control" placeholder="Search for...">
-              <span class="input-group-btn">
-                <button class="btn btn-secondary" type="button">Go!</button>
-              </span>
-            </div>
-          </div>
-        </div>
 
         <!-- Categories Widget -->
         <div class="card my-4">
