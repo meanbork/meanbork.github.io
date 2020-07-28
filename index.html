@@ -1,145 +1,54 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html>
 <head>
-
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <meta name="description" content="">
-  <meta name="author" content="">
-
-  <title>I have no idea what I'm doing</title>
+  <title>Janky Raspberry Pi Surveillance Camera</title>
   <link type="text/css" rel="stylesheet" href="stylesheets/main.css" />
-
 </head>
-
 <body>
-
-  <!-- Page Content -->
   <div class="wrapper">
-        <!-- Title -->
-      <h1 class="mt-4">Janky Raspberry Pi Surveillance Camera</h1>
-        <!-- Author -->
-        <p class="lead">
-          by
-          <a href="#">Meanbork</a>
-        </p>
-    
-        <hr>
-
-        <!-- Date/Time -->
-        <p>Posted on July 26, 2020 at 08:00 PM</p>
-
-        <hr>
-
-        <!-- Preview Image -->
-        <img class="img-fluid rounded" src="https://user-images.githubusercontent.com/64041628/88489930-5c8eec00-cf5d-11ea-9dc3-4324ed3aba36.jpg" alt="What you need mostly" width="500" height="600">
-
-        <hr>
-
-        <!-- Post Content -->
-        <p class="lead">Testing HTML and recording my projects for giggles.</p>
-
-        <p>Stuff I NEEDED: Raspberry Pi 3 B+, USB 2.0 extender male to female, Raspberry Pi camera V2 (I would use something nicer in the future - the max resolution is 8 mega pixels and ribbon cable blows).</p>
-
-        <p>Following are the steps I took to complete the project.</p>
-        
-        <hr>
-
-        <section class="block">
-          <p>1: Install Raspbian Lite
-          2: After installing Lite, go ahead and Google “Raspbian Lite with RPD/LXDE/XFCE/MATE/i3/Openbox/X11 GUI”. Follow the steps and install the GUI you desire.
-          3: Restart. Open terminal. Type: ifconfig and jot down your IP. You are going to need it.
-          4: Type: sudo apt-get install motion</p>
-          <p>5: Check your camera's status. If you are using camera connected to USB port, Type: lsusb</p>
-          <p>*** If you are using V2 or similar stuff, Type: raspistill -o test.jpg</p>
-          <p>*** Not working? Type: sudo rasp-config, go to interface options and fiddle with the camera settings</p>
-          <p>6: Type: sudo nano /etc/motion/motion.conf</p>
-          <p>*** daemon off -> daemon on</p>
-          <p>*** width 320 -> 640</p>
-          <p>*** height 240 -> 480</p>
-          <p>*** framerate 2 -> 100</p>
-          <p>*** ffmpeg_output_movies on -> off (Turn it off so you stop recording & saving video files)</p>
-          <p>*** stream_maxrate 1 -> 100</p>
-          <p>*** stream_localhost on -> off</p>
-          <p>*** webcontrol_localhost on -> off</p>
-          <p>*** save and exit motion.conf </p>
-          <p>*** Tip: To look for keywords use :CTRL+W</p>
-          <p>7: Type: sudo nano /etc/default/motion</p>
-          <p>*** Start_motion_daemon=no -> yes</p>
-          <p>8: Type: sudo nano /etc/rc.local</p>
-          <p>*** Write in "sudo motion"</p>
-          <img class="img-fluid rounded" src="https://user-images.githubusercontent.com/64041628/88491948-961b2380-cf6c-11ea-89f5-a3f8c362ee53.JPG" alt="Write here" width="300" height="200"> 
-          <p>9: Type: sudo chmod 777 /var/lib/motion</p>
-          <p>10: This is going to depend on your router & ISP. I had to make a free account at "www.noip.com" to create DDNS</p>
-          <p>11: Either way - Go to your router and designate static IP (Your Raspberry Pi) for portforwarding.</p>
-          <p>*** Internal port number = 8081. External port number = Your choice</p>
-          <p>12: Restart</p>
-          <p>13: Go to your browser (Any device with internet) and type in your address. Mine was meanbork.ddns.net:1234</p>
-          <p>There you have it. Your own janky surveillance camera.</p>
-          <p>Advisory: It is best to complete the DDNS process on your router and rotate port number.</p>
-          <p>Also if you don't plan on changing camera's setting remotely, just leave the "Webcontrol_localhost on"</p>
-        </section>
-
-        <!-- Categories Widget -->
-        <div class="card my-4">
-          <h5 class="card-header">Categories</h5>
-          <div class="card-body">
-            <div class="row">
-              <div class="col-lg-6">
-                <ul class="list-unstyled mb-0">
-                  <li>
-                    <a href="#">Undecided Future Project</a>
-                  </li>
-                  <li>
-                    <a href="#">Undecided Future Project</a>
-                  </li>
-                  <li>
-                    <a href="#">Undecided Future Project</a>
-                  </li>
-                  <li>
-                    <a href="#">Undecided Future Project</a>
-                  </li>
-                  <li>
-                    <a href="#">Undecided Future Project</a>
-                  </li>
-                  <li>
-                    <a href="#">Undecided Future Project</a>
-                  </li>
-                </ul>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <!-- Side Widget -->
-        <div class="card my-4">
-          <h5 class="card-header">Add me on PSN, Steam, or Discord</h5>
-          <div class="card-body">
-            Green is my favorite crayon.
-          </div>
-        </div>
-
-      </div>
-
-    </div>
-    <!-- /.row -->
-
+    <h1>Janky Raspberry Pi Surveillance Camera</h1>
+    <section class="block">
+      <p>Stuff I NEEDED: Raspberry Pi 3 B+, USB 2.0 extender male to female, Raspberry Pi camera V2 
+        (I would use something nicer in the future - the max resolution is 8 mega pixels and ribbon cable blows).</p>
+      <p>Following are the steps I took to complete the project.</p>
+      <p>1: Install Raspbian Lite
+         2: After installing Lite, go ahead and Google “Raspbian Lite with RPD/LXDE/XFCE/MATE/i3/Openbox/X11 GUI”. 
+         Follow the steps and install the GUI you desire.
+         3: Restart. Open terminal. Type: ifconfig and jot down your IP. You are going to need it.
+         4: Type: sudo apt-get install motion
+         5: Check your camera's status. If you are using camera connected to USB port, Type: lsusb
+         *** If you are using V2 or similar stuff, Type: raspistill -o test.jpg
+         *** Not working? Type: sudo rasp-config, go to interface options and fiddle with the camera settings
+         6: Type: sudo nano /etc/motion/motion.conf
+         *** daemon off -> daemon on
+         *** width 320 -> 640
+         *** height 240 -> 480
+         *** framerate 2 -> 100
+         *** ffmpeg_output_movies on -> off (Turn it off so you stop recording & saving video files)
+         *** stream_maxrate 1 -> 100
+         *** stream_localhost on -> off
+         *** webcontrol_localhost on -> off
+         *** save and exit motion.conf
+         *** Tip: To look for keywords use :CTRL+W
+         7: Type: sudo nano /etc/default/motion
+         *** Start_motion_daemon=no -> yes
+         8: Type: sudo nano /etc/rc.local
+         *** Write in "sudo motion"
+      <img class="img-fluid rounded" src="https://user-images.githubusercontent.com/64041628/88491948-961b2380-cf6c-11ea-89f5-a3f8c362ee53.JPG" alt="Write here" width="300" height="200"> 
+         9: Type: sudo chmod 777 /var/lib/motion
+         10: This is going to depend on your router & ISP. I had to make a free account at "www.noip.com" to create DDNS
+         11: Either way - Go to your router and designate static IP (Your Raspberry Pi) for portforwarding.
+         *** Internal port number = 8081. External port number = Your choice
+         12: Restart
+         13: Go to your browser (Any device with internet) and type in your address. Mine was meanbork.ddns.net:1234
+         Someone famous in Source Title
+         There you have it. Your own janky surveillance camera.</p>
+      <p>Advisory: It is best to complete the DDNS process on your router and rotate port number.
+         Also if you don't plan on changing camera's setting remotely, just leave the "Webcontrol_localhost on"</p>
+    </section>
   </div>
-  <!-- /.container -->
-
-  <!-- Footer -->
-  <footer class="py-5 bg-dark">
-    <div class="container">
-      <p class="m-0 text-center text-white">Discord: ssaga305</p>
-    </div>
-    <!-- /.container -->
-  </footer>
-
-  <!-- Bootstrap core JavaScript -->
-  <script src="vendor/jquery/jquery.min.js"></script>
-  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-
 </body>
-
 </html>
+
+                 
