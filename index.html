@@ -1,54 +1,29 @@
+
 <!DOCTYPE html>
 <html>
 <head>
   <meta charset="utf-8">
-  <title>Janky Raspberry Pi Surveillance Camera</title>
+  <title>Main Page</title>
   <link rel="stylesheet" type="text/css" href="stylesheets/main.css">
 </head>
 <body>
-  
   <div class="wrapper">
-    <h1>Janky Raspberry Pi Surveillance Camera</h1>
+    <h1>Main Page</h1>
     
     <section class="block">
-      <p>Stuff I NEEDED: Raspberry Pi 3 B+, USB 2.0 extender male to female, Raspberry Pi camera V2 
-        (I would use something nicer in the future - the max resolution is 8 mega pixels and ribbon cable blows).</p>
+      <p style="text-align:center">Address: 528 Lakehurst Road, 2R, Waukegan, Illinois, 60085
+      </p>
       <hr>
-      <p>Following are the steps I took to complete the project.</p>
-      <p>1: Install Raspbian Lite</p>
-      <p>2: After installing Lite, go ahead and Google “Raspbian Lite with RPD/LXDE/XFCE/MATE/i3/Openbox/X11 GUI”. 
-         Follow the steps and install the GUI you desire.</p>
-      <p>3: Restart. Open terminal. Type: ifconfig and jot down your IP. You are going to need it.</p>
-      <p>4: Type: sudo apt-get install motion</p>
-      <p>5: Check your camera's status. If you are using camera connected to USB port, Type: lsusb</p>
-      <p>*** If you are using V2 or similar stuff, Type: raspistill -o test.jpg</p>
-      <p>*** Not working? Type: sudo rasp-config, go to interface options and fiddle with the camera settings</p>
-      <p>6: Type: sudo nano /etc/motion/motion.conf</p>
-      <p>*** daemon off -> daemon on</p>
-      <p>*** width 320 -> 640</p>
-      <p>*** height 240 -> 480</p>
-      <p>*** framerate 2 -> 100</p>
-      <p>*** ffmpeg_output_movies on -> off (Turn it off so you stop recording & saving video files)</p>
-      <p>*** stream_maxrate 1 -> 100</p>
-      <p>*** stream_localhost on -> off</p>
-      <p>*** webcontrol_localhost on -> off</p>
-      <p>*** save and exit motion.conf</p>
-      <p>*** Tip: To look for keywords use :CTRL+W</p>
-      <p>7: Type: sudo nano /etc/default/motion</p>
-      <p>*** Start_motion_daemon=no -> yes</p>
-      <p>8: Type: sudo nano /etc/rc.local</p>
-      <p>*** Write in "sudo motion"</p>
-      <img class="img-fluid rounded" src="https://user-images.githubusercontent.com/64041628/88491948-961b2380-cf6c-11ea-89f5-a3f8c362ee53.JPG" alt="Write here" width="300" height="200"> 
-      <p>9: Type: sudo chmod 777 /var/lib/motion</p>
-      <p>10: This is going to depend on your router & ISP. I had to make a free account at "www.noip.com" to create DDNS</p>
-      <p>11: Either way - Go to your router and designate static IP (Your Raspberry Pi) for portforwarding.</p>
-      <p>*** Internal port number = 8081. External port number = Your choice</p>
-      <p>12: Restart</p>
-      <p>13: Go to your browser (Any device with internet) and type in your address. Mine was meanbork.ddns.net:1234</p>
-      <p>There you have it. Your own janky surveillance camera.</p>
+      <p style="text-align:center">Speed of light: 186,287 miles per second.
+      </p>
+      <p style="text-align:center">What is cancer: Cancer is a group of diseases involving abnormal cell growth with the potential to invade or spread to other parts of the body.
+      </p>
+      <p style="text-align:center">Cancer treatment options: Surgery, Radiation therapy, Chemotherapy, Targeted therapies, Immunotherapy
+, Hormonal therapy, Angiogenesis inhibitors, Synthetic lethality.
+      </p>
       <hr>
-      <p>Advisory: It is best to complete the DDNS process on your router and rotate port number.
-         Also if you don't plan on changing camera's setting remotely, just leave the "Webcontrol_localhost on"</p>
+      <p style="text-align:center">Jeep Wrangler mileage: Up to 22 city / 29 highway
+      </p>
     </section>
   </div>
   
