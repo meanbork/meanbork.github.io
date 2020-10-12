@@ -17,8 +17,8 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif}
 <div class="w3-top">
   <div class="w3-bar w3-red w3-card w3-left-align w3-large">
     <a class="w3-bar-item w3-button w3-hide-medium w3-hide-large w3-right w3-padding-large w3-hover-white w3-large w3-red" href="javascript:void(0);" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
-    <a href="#" class="w3-bar-item w3-button w3-padding-large w3-white">Home</a>
-    <a href="https://www.linkedin.com/in/allen-lee-34a798172/" target="_blank"class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">LinkedIn</a>
+    <a href="https://meanbork.github.io" class="w3-bar-item w3-button w3-padding-large w3-white">Home</a>
+    <a href="https://meanbork.github.io/chatbotpy.html" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Chatbot Lib</a>
     <a href="#" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Link 2</a>
     <a href="#" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Link 3</a>
     <a href="#" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Link 4</a>
@@ -34,7 +34,7 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif}
 </div>
 
 <!-- Header -->
-<header class="w3-container w3-red w3-center" style="padding:128px 16px">
+<header class="w3-container w3-orange w3-center" style="padding:128px 16px">
   <h1 class="w3-margin w3-jumbo">Python Chatbot</h1>
   <p class="w3-xlarge">Project Library</p>
   <button class="w3-button w3-black w3-padding-large w3-large w3-margin-top">Get Started</button>
@@ -44,21 +44,42 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif}
 <div class="w3-row-padding w3-padding-64 w3-container">
   <div class="w3-content">
     <div class="w3-twothird">
-      <h1>Brief Introduction</h1>
-      <h5 class="w3-padding-32">I like to make, break, and fix stuff. I'm hoping to work on various projects that I did not have sufficient time to work on at school & work. I'll be delving into Raspberry Pi, Kali Linux, Python, Cisco Packet Tracer assignments, and other cool gadgets.</h5>
-
-      <p class="w3-text-grey">The purpose of this webpage to record multiple projects. Mainly for myself as a reference. If the project is based on, or heavily inspired by the certain individual, group, or organization, proper credit will be stated promptly.</p>
+      <h1>Stuxnet</h1>
+      <h5 class="w3-padding-32">Stuxnet: Worm often referred to as the first "Cyber super weapon". The worm specifically targets industrial control systems. 
+        It was revealed to have been a weapon created by the US and Israeli governments against Iranian nuclear facilities. 
+        Stuxnet exploits a vulnerability in the Windows Print Spooler service to spread over networked machines. 
+        It "prints" two files, winsta.exe, a dropper in the system folder and one additional file, sysnullevnt.mof.</h5>
+      <p class="w3-text-grey">Date of discovery: 2010/06/17. Place of origin: USA, Israel. Language source: C++, C. File type: .dll, .tmp</p>
     </div>
   </div>
 </div>
 
 <!-- Second Grid -->
+<div class="w3-row-padding w3-padding-64 w3-container">
+  <div class="w3-content">
+    <div class="w3-twothird">
+      <h1>Navidad</h1>
+      <h5 class="w3-padding-32">Navidad: Mass mailing worm that displays the various error messages in Spanish. The worm is capable of making the computer inoperable. 
+        The virus arrives in an email that appears to be a reply. When executed, it displays error messages "UI". 
+        The virus then preceeds to copy itself to Winsvrc.vxd and change the registry key values. This will cause the computer to prompt the user to find Winsvrc.exe with no avail.
+        The Navidad virus will then keep mailing itself using MAPI protocol with NAVIDAD.EXE as an attachment.</h5>
+      <p class="w3-text-grey">Date of discovery: 2000/11/03. Place of origin: South America. Language source: C++. File type: .exe</p>
+    </div>
+  </div>
+</div>
+
+<!-- Third Grid -->
 <div class="w3-row-padding w3-light-grey w3-padding-64 w3-container">
   <div class="w3-content">
     <div class="w3-twothird">
-      <h1>Don't Get Sweaty</h1>
-      <h5 class="w3-padding-32">I'm no expert! I'm constantly learning and hoping to get better. Don't take yourself too seriously.</h5>
-      <p class="w3-text-grey">Remember to have fun and be humble. After hard day at work, last thing you want is to stress even more. This is just a hobby. Expensive hobby.</p>
+      <h1>WannaCry</h1>
+      <h5 class="w3-padding-32">WannaCry: Catagorized as ransomware cryptoworm. Specifically targets Windows OS. 
+      The Virus propogates by using EternalBlue - Exploit from older Windows systems, more specifically, the Server Message Block (SMB).
+      The SMB protocol helps various nodes to communicate on network. Once infected, the virus attempts to reach gibberish URL / domain.
+      If successful, WannaCry will shutdown. Unsuccesful, the virus will create "mssecsvc2.0" which then begins to extract binary resource to
+      encrypt. The user is demanded of bitcoin payment to recover their system, the ransom will double if the timer expires.
+      </h5>
+      <p class="w3-text-grey">Date of discovery: 2017/05/12. Place of origin: North Korea. Language source: C++. File type: .wcry, .bak, .doc, .mpg, .pdf</p>
     </div>
   </div>
 </div>
