@@ -103,13 +103,26 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif}
 </footer>
 
 <script>
-// Used to toggle the menu on small screens when clicking on the menu button
-function myFunction() {
+//small screen convertion
+function convFunction() {
   var x = document.getElementById("navDemo");
   if (x.className.indexOf("w3-show") == -1) {
     x.className += " w3-show";
   } else { 
     x.className = x.className.replace(" w3-show", "");
+  }
+}
+//dropbar show & hide
+function dropFunction() {
+  document.getElementById("myDropdown").classList.toggle("show");
+}
+//if clicked outside of dropdown, exit
+window.onclick = function(e) {
+  if (!e.target.matches('.dropbtn')) {
+  var myDropdown = document.getElementById("myDropdown");
+    if (myDropdown.classList.contains('show')) {
+      myDropdown.classList.remove('show');
+    }
   }
 }
 </script>
