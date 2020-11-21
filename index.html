@@ -10,21 +10,37 @@
 <style>
 body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif}
 .w3-bar,h1,button {font-family: "Montserrat", sans-serif}
-.fa-cubes,.fa-coffee {font-size:200px}
+.fa-anchor,.fa-coffee {font-size:200px}
+.navbar {overflow: hidden;background-color: #333;font-family: Arial, Helvetica, sans-serif;}
+.navbar a {float: left;font-size: 16px;color: white;text-align: center;padding: 14px 16px;text-decoration: none;}
+.dropdown {float: left;overflow: hidden;}
+.dropdown .dropbtn {cursor: pointer;font-size: 16px;border: none;outline: none;color: white;padding: 14px 16px;background-color: inherit;font-family: inherit;margin: 0;}
+.navbar a:hover, .dropdown:hover .dropbtn, .dropbtn:focus {background-color: red;}
+.dropdown-content {display: none;position: absolute;background-color: #f9f9f9;min-width: 160px;box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);z-index: 1;}
+.dropdown-content a {float: none;color: black;padding: 12px 16px;text-decoration: none;display: block;text-align: left;}
+.show {display: block;}
 </style>
 <body>
 
 <!-- Navbar -->
 <div class="w3-top">
   <div class="w3-bar w3-red w3-card w3-left-align w3-large">
-    <a class="w3-bar-item w3-button w3-hide-medium w3-hide-large w3-right w3-padding-large w3-hover-white w3-large w3-red" href="javascript:void(0);" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
+    <a class="w3-bar-item w3-button w3-hide-medium w3-hide-large w3-right w3-padding-large w3-hover-white w3-large w3-red" href="javascript:void(0);" onclick="convFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars">     </i></a>
     <a href="https://meanbork.github.io" class="w3-bar-item w3-button w3-padding-large w3-white">Home</a>
-    <a href="https://meanbork.github.io/weather.html" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Python</a>
-    <a href="#" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Link 2</a>
-    <a href="#" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Link 3</a>
-    <a href="#" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Link 4</a>
+    <a href="#" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">OTW</a>
+    <a href="#" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Raspberry Pi</a>
+    <a href="#" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Ghidra</a>
+      <div class="dropdown">
+      <button class="dropbtn" onclick="dropFunction()">Python
+      </button>
+        <div class="dropdown-content" id="myDropdown">
+          <a href="https://meanbork.github.io/weather.html" class="w3-button w3-hide-small w3-padding-large w3-hover-white">Weather Script</a>
+          <a href="#" class="w3-button w3-hide-small w3-padding-large w3-hover-white">Selenium</a>
+          <a href="#" class="w3-button w3-hide-small w3-padding-large w3-hover-white">Key Logger</a>
+        </div>
+      </div>
   </div>
-
+</div>
   <!-- Navbar on small screens -->
   <div id="navDemo" class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium w3-large">
     <a href="https://meanbork.github.io/weather.html" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Python</a>
