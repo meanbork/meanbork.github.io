@@ -35,7 +35,7 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif}
         <div class="dropdown-content" id="myDropdown">
           <a href="https://meanbork.github.io/weather.html" class="w3-button w3-hide-small w3-padding-large w3-hover-white">Weather Script</a>
           <a href="https://meanbork.github.io/grammarcheck.html" class="w3-button w3-hide-small w3-padding-large w3-hover-white">Web Scrapping</a>
-          <a href="#" class="w3-button w3-hide-small w3-padding-large w3-hover-white">Key Logger</a>
+          <a href="https://meanbork.github.io/keylog.html" class="w3-button w3-hide-small w3-padding-large w3-hover-white">Key Logger</a>
         </div>
       </div>
   </div>
@@ -51,7 +51,7 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif}
 
 <!-- Header -->
 <header class="w3-container w3-blue-grey w3-center" style="padding:128px 16px">
-  <h1 class="w3-margin w3-jumbo">Python Grammar Check</h1>
+  <h1 class="w3-margin w3-jumbo">Python Key Logging</h1>
   <p class="w3-xlarge">Project Library</p>
   <button class="w3-button w3-black w3-padding-large w3-large w3-margin-top">Get Started</button>
 </header>
@@ -61,13 +61,13 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif}
   <div class="w3-content">
     <div class="w3-twothird">
       <h1>Intro</h1>
-      <h5 class="w3-padding-32">요즘 느끼는 거지만... Spacing and spelling is difficult to get right with Korean.
-      <br>So for future Allen, I decided to write a script. The script is not going to do the hard work.
-      <br>With Selenium, and BeautifulSoup, I can automate the following: Pull the website, Type in texts, Select boxes/buttons, and selectively query the returned values.
-      <br>As always - here is the rough draft
+      <h5 class="w3-padding-32">Wait I know this is a terrible.
+      <br>It makes no sense to make a key logger with an interpreted language.
+      <br>
+      <br>
       </h5>
-      <img src="meanbork.github.io/images/start1.JPG" alt="hi" class="inline"/>
-      <p class="w3-text-grey">Stuff I needed: chromedriver for selenium. Visual Studio but any IDE will be fine.</p>
+      <img src="" alt="hi" class="inline"/>
+      <p class="w3-text-grey"></p>
     </div>
   </div>
 </div>
@@ -77,78 +77,30 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif}
   <div class="w3-content">
     <div class="w3-twothird">
       <h1>Steps</h1>
-      <h5 class="w3-padding-32">So as of 2020, it is still in beta stage. But this is what is looks like. Just know that max character is 500.
-      <br>I want the selenium to get to this page and click in the box.
+      <h5 class="w3-padding-32">
+      <br>
       </h5>
-      <img src="meanbork.github.io/images/intro1.JPG" alt="hi" class="inline"/>
-      <p class="w3-text-grey">Now that I think about it. I'm pretty sure Google can also check for Korean grammar.</p>
+      <img src="" alt="hi" class="inline"/>
+      <p class="w3-text-grey"></p>
     </div>
   </div>
 </div>
 
 <!-- Third Grid -->
 <div class="w3-row-padding w3-padding-64 w3-container">
-  <div class="w3-content">
-    <div class="w3-twothird">
-      <h1>Selenium</h1>
-      <h5 class="w3-padding-32">On the front page of naver.com, right click on the search bar and click on Inspect. This will show the HTML sources, which is needed for selenium.
-        <br>I'm going to choose input id="query". 
-        <br>This value can be used & defined as such: link = x.find_element_by_id('query')
-        <br>Take a look at the image you saved for yourself.
-      </h5>
-      <img src="meanbork.github.io/images/front1.JPG" alt="hi" align="left"/>
-      <p class="w3-text-grey">I personally like text. For example, to click on the "VIBE" from the image above: I would text = x.find_element_by_link_text('VIBE')</p>
-    </div>
-  </div>
-</div>
-
-<!-- Fourth Grid -->
-<div class="w3-row-padding w3-light-grey w3-padding-64 w3-container">
-  <div class="w3-content">
-    <div class="w3-twothird">
-      <h1>So far...</h1>
-      <h5 class="w3-padding-32">I imported selenium-keys so we can user RETURN, and selenium-actionchains to find elements such as id, text, and css.
-        <br>Path is where I saved the chromedriver, and specified.
-        <br>text.send_keys("맞춤법검사기") is used to insert text into the search bar. 
-        <br>text.send_keys(Keys.RETURN) is used to press ENTER.
-        <img src="meanbork.github.io/images/firstblck1.JPG" alt="hi" class="inline"/>
-        </h5>
-      <p class="w3-text-grey">I wonder if I can do this with newspaper module instead of beautifulsoup?</p>
-    </div>
-  </div>
-</div>  
-  
-<!-- Third Grid -->
-<div class="w3-row-padding w3-padding-64 w3-container">
-  <div class="w3-content">
-    <div class="w3-twothird">
-      <h1>BeautifulSoup</h1>
-      <h5 class="w3-padding-32">I gave it a quick test run. Also to see where the output/returned text is on the source.
-        <br>I purposely inserted "월요일이제일싫어" with no spaces just to see if it will get fixed. And it does! Goodjob Allen.
-        <br>With the main goal achieved, I worked on how to retrieve the output. Looks like its under p class="_result_text stand_txt".
-        <br>So this is where BeautifulSoup came in.
-        <br>And here is saved image Allen. Your welcome.
-      </h5>
-          <img src="meanbork.github.io/images/corrected1.JPG" alt="hi" align="inline"/>
-      <p class="w3-text-grey">I honestly wasn't 100% sure how to space out "월요일이제일싫어". Is it "월요일 이 제일 싫어"? or "월요일 이 제일싫어"? Turns out I was wrong on both</p>
-    </div>
-  </div>
-</div>
-
-<!-- Fourth Grid -->
-<div class="w3-row-padding w3-light-grey w3-padding-64 w3-container">
   <div class="w3-content">
     <div class="w3-twothird">
       <h1>Done</h1>
-      <h5 class="w3-padding-32">parse is created to look into page_source -> p class="_result_text stand_txt".
-        <br>And that is pretty much it! I saved in under your webproject folder.
-        <img src="meanbork.github.io/images/done1.JPG" alt="hi" class="inline"/>
-        </h5>
-      <p class="w3-text-grey">time.sleep() was used because the script was too fast compared to the webpage loading. The script returned with element not found because
-      the page wasn't even loaded.</p>
+      <h5 class="w3-padding-32">
+        <br>
+        <br>
+        <br>
+      </h5>
+      <img src="" alt="hi" align="left"/>
+      <p class="w3-text-grey"></p>
     </div>
   </div>
-</div> 
+</div>
   
 <div class="w3-container w3-black w3-center w3-opacity w3-padding-64">
     <h1 class="w3-margin w3-xlarge">Bingo Bango</h1>
