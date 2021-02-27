@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<title>Forever Newb</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif}
+.w3-bar,h1,button {font-family: "Montserrat", sans-serif}
+.navbar {overflow: hidden;background-color: #333;font-family: Arial, Helvetica, sans-serif;}
+.navbar a {float: left;font-size: 16px;color: white;text-align: center;padding: 14px 16px;text-decoration: none;}
+.dropdown {float: left;overflow: hidden;}
+.dropdown .dropbtn {cursor: pointer;font-size: 16px;border: none;outline: none;color: white;padding: 14px 16px;background-color: inherit;font-family: inherit;margin: 0;}
+.navbar a:hover, .dropdown:hover .dropbtn, .dropbtn:focus {background-color: red;}
+.dropdown-content {display: none;position: absolute;background-color: #f9f9f9;min-width: 160px;box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);z-index: 1;}
+.dropdown-content a {float: none;color: black;padding: 12px 16px;text-decoration: none;display: block;text-align: left;}
+.show {display: block;}
+</style>
+<body>
+
+<!-- Navbar -->
+<div class="w3-top">
+  <div class="w3-bar w3-blue w3-card w3-left-align w3-large">
+    <a class="w3-bar-item w3-button w3-hide-medium w3-hide-large w3-right w3-padding-large w3-hover-white w3-large w3-red" href="javascript:void(0);" onclick="convFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
+    <a href="https://meanbork.github.io" class="w3-bar-item w3-button w3-padding-large w3-white">Home</a>
+    <a href="#" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">OTW</a>
+    <a href="#" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Raspberry Pi</a>
+    <a href="#" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Ghidra</a>
+      <div class="dropdown">
+      <button class="dropbtn" onclick="dropFunction()">Python
+      </button>
+        <div class="dropdown-content" id="myDropdown">
+          <a href="https://meanbork.github.io/weather.html" class="w3-button w3-hide-small w3-padding-large w3-hover-white">Weather Script</a>
+          <a href="https://meanbork.github.io/grammarcheck.html" class="w3-button w3-hide-small w3-padding-large w3-hover-white">Web Scrapping</a>
+          <a href="https://meanbork.github.io/keylog.html" class="w3-button w3-hide-small w3-padding-large w3-hover-white">Key Logger</a>
+          <a href="https://meanbork.github.io/codewar1.html" class="w3-button w3-hide-small w3-padding-large w3-hover-white">Codewars Challenge 1</a>
+          <a href="https://meanbork.github.io/codewar2.html" class="w3-button w3-hide-small w3-padding-large w3-hover-white">Codewars Challenge 2</a>
+        </div>
+      </div>
+  </div>
+</div>
+  <!-- Navbar on small screens -->
+  <div id="navDemo" class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium w3-large">
+    <a href="https://meanbork.github.io" class="w3-bar-item w3-button w3-padding-large w3-white">Home</a>
+  </div>
+</div>
+
+<!-- Header -->
+<header class="w3-container w3-pale-green w3-center" style="padding:128px 16px">
+  <h1 class="w3-margin w3-jumbo">Python Key Logging</h1>
+  <p class="w3-xlarge">Project Library</p>
+  <button class="w3-button w3-black w3-padding-large w3-large w3-margin-top">Get Started</button>
+</header>
+
+<!-- First Grid -->
+<div class="w3-row-padding w3-padding-64 w3-container">
+  <div class="w3-content">
+    <div class="w3-twothird">
+      <h1>Intro</h1>
+      <h5 class="w3-padding-32">
+      <br>It makes no sense to make a key logger with an interpreted language.
+      <br>So why?
+      <br>I did it because its everywhere online and I always wanted to keylog myself.
+      <br>The source code is below: Its rather straight forward.
+      </h5>
+      <img src="meanbork.github.io/images/tada1.JPG" alt="hi" class="inline"/>
+      <p class="w3-text-grey">Anyone with python package can see the source code. AND this wouldn't work if a computer doesn't have python installed.</p>
+    </div>
+  </div>
+</div>
+
+<!-- Second Grid -->
+<div class="w3-row-padding w3-light-grey w3-padding-64 w3-container">
+  <div class="w3-content">
+    <div class="w3-twothird">
+      <h1>Donzo</h1>
+      <h5 class="w3-padding-32">
+      <br>Yup.. Thats it.
+      </h5>
+      <img src="meanbork.github.io/images/tada2.JPG" alt="hi" class="inline"/>
+      <p class="w3-text-grey">Chicago pizza is a delicious mistake.</p>
+    </div>
+  </div>
+</div>
+
+<div class="w3-container w3-black w3-center w3-opacity w3-padding-64">
+    <h1 class="w3-margin w3-xlarge">Bingo Bango</h1>
+</div>
+
+<!-- Footer -->
+<footer class="w3-container w3-padding-64 w3-center w3-opacity">  
+  <div class="w3-xlarge w3-padding-32">
+  <a href="https://www.linkedin.com/in/allen-lee-34a798172/" target="_blank">
+    <i class="fa fa-linkedin w3-hover-opacity"></i>
+ </div>
+ <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank">w3.css</a></p>
+</footer>
+
+<script>
+//small screen convertion
+function convFunction() {
+  var x = document.getElementById("navDemo");
+  if (x.className.indexOf("w3-show") == -1) {
+    x.className += " w3-show";
+  } else { 
+    x.className = x.className.replace(" w3-show", "");
+  }
+}
+//dropbar show & hide
+function dropFunction() {
+  document.getElementById("myDropdown").classList.toggle("show");
+}
+//if clicked outside of dropdown, exit
+window.onclick = function(e) {
+  if (!e.target.matches('.dropbtn')) {
+  var myDropdown = document.getElementById("myDropdown");
+    if (myDropdown.classList.contains('show')) {
+      myDropdown.classList.remove('show');
+    }
+  }
+}
+</script> 
+
+</body>
+</html>
