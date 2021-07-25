@@ -1,1 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<title>Forever Newb</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif}
+.w3-bar,h1,button {font-family: "Montserrat", sans-serif}
+.navbar {overflow: hidden;background-color: #333;font-family: Arial, Helvetica, sans-serif;}
+.navbar a {float: left;font-size: 16px;color: white;text-align: center;padding: 14px 16px;text-decoration: none;}
+.dropdown {float: left;overflow: hidden;}
+.dropdown .dropbtn {cursor: pointer;font-size: 16px;border: none;outline: none;color: white;padding: 14px 16px;background-color: inherit;font-family: inherit;margin: 0;}
+.navbar a:hover, .dropdown:hover .dropbtn, .dropbtn:focus {background-color: red;}
+.dropdown-content {display: none;position: absolute;background-color: #f9f9f9;min-width: 160px;box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);z-index: 1;}
+.dropdown-content a {float: none;color: black;padding: 12px 16px;text-decoration: none;display: block;text-align: left;}
+.show {display: block;}
+</style>
+<body>
 
+<!-- Navbar -->
+<div class="w3-top">
+  <div class="w3-bar w3-blue w3-card w3-left-align w3-large">
+    <a class="w3-bar-item w3-button w3-hide-medium w3-hide-large w3-right w3-padding-large w3-hover-white w3-large w3-red" href="javascript:void(0);" onclick="convFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
+    <a href="https://meanbork.github.io" class="w3-bar-item w3-button w3-padding-large w3-white">Home</a>
+    <a href="#" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">OTW</a>
+    <a href="#" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Raspberry Pi</a>
+    <a href="#" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Ghidra</a>
+      <div class="dropdown">
+      <button class="dropbtn" onclick="dropFunction()">Python
+      </button>
+        <div class="dropdown-content" id="myDropdown">
+          <a href="https://meanbork.github.io/weather.html" class="w3-button w3-hide-small w3-padding-large w3-hover-white">Weather Script</a>
+          <a href="https://meanbork.github.io/grammarcheck.html" class="w3-button w3-hide-small w3-padding-large w3-hover-white">Web Scrapping</a>
+          <a href="https://meanbork.github.io/keylog.html" class="w3-button w3-hide-small w3-padding-large w3-hover-white">Key Logger</a>
+          <a href="https://meanbork.github.io/codewar1.html" class="w3-button w3-hide-small w3-padding-large w3-hover-white">Codewars Challenge 1</a>
+          <a href="https://meanbork.github.io/codewar2.html" class="w3-button w3-hide-small w3-padding-large w3-hover-white">Codewars Challenge 2</a>
+        </div>
+      </div>
+  </div>
+</div>
+  <!-- Navbar on small screens -->
+  <div id="navDemo" class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium w3-large">
+    <a href="https://meanbork.github.io" class="w3-bar-item w3-button w3-padding-large w3-white">Home</a>
+  </div>
+</div>
+
+<!-- Header -->
+<header class="w3-container w3-blue-grey w3-center" style="padding:128px 16px">
+  <h1 class="w3-margin w3-jumbo">Python Grammar Check</h1>
+  <p class="w3-xlarge">Project Library</p>
+  <button class="w3-button w3-black w3-padding-large w3-large w3-margin-top">Get Started</button>
+</header>
+
+<!-- First Grid -->
+<div class="w3-row-padding w3-padding-64 w3-container">
+  <div class="w3-content">
+    <div class="w3-twothird">
+      <h1>Intro</h1>
+      <h5 class="w3-padding-32">요즘 느끼는 거지만... Spacing and spelling is difficult to get right with Korean.
+      <br>So for future Allen, I decided to write a script. The script is not going to do the hard work.
+      <br>With Selenium, and BeautifulSoup, I can automate the following: Pull the website, Type in texts, Select boxes/buttons, and selectively query the returned values.
+      <br>As always - here is the rough draft
+      </h5>
+      <img src="https://meanbork.github.io/images/start1.JPG" alt="hi" class="inline"/>
+      <p class="w3-text-grey">Stuff I needed: chromedriver for selenium. Visual Studio but any IDE will be fine.</p>
+    </div>
+  </div>
+</div>
+
+<!-- Second Grid -->
+<div class="w3-row-padding w3-light-grey w3-padding-64 w3-container">
+  <div class="w3-content">
+    <div class="w3-twothird">
+      <h1>Steps</h1>
+      <h5 class="w3-padding-32">So as of 2020, it is still in beta stage. But this is what is looks like. Just know that max character is 500.
+      <br>I want the selenium to get to this page and click in the box.
+      </h5>
+      <img src="https://meanbork.github.io/images/intro1.JPG" alt="hi" class="inline"/>
+      <p class="w3-text-grey">Now that I think about it. I'm pretty sure Google can also check for Korean grammar.</p>
+    </div>
+  </div>
+</div>
+
+<!-- Third Grid -->
+<div class="w3-row-padding w3-padding-64 w3-container">
+  <div class="w3-content">
+    <div class="w3-twothird">
+      <h1>Selenium</h1>
+      <h5 class="w3-padding-32">On the front page of naver.com, right click on the search bar and click on Inspect. This will show the HTML sources, which is needed for selenium.
+        <br>I'm going to choose input id="query". 
+        <br>This value can be used & defined as such: link = x.find_element_by_id('query')
+        <br>Take a look at the image you saved for yourself.
+      </h5>
+      <img src="https://meanbork.github.io/images/front1.JPG" alt="hi" align="left"/>
+      <p class="w3-text-grey">I personally like text. For example, to click on the "VIBE" from the image above: I would text = x.find_element_by_link_text('VIBE')</p>
+    </div>
+  </div>
+</div>
+
+<!-- Fourth Grid -->
+<div class="w3-row-padding w3-light-grey w3-padding-64 w3-container">
+  <div class="w3-content">
+    <div class="w3-twothird">
+      <h1>So far...</h1>
+      <h5 class="w3-padding-32">I imported selenium-keys so we can user RETURN, and selenium-actionchains to find elements such as id, text, and css.
+        <br>Path is where I saved the chromedriver, and specified.
+        <br>text.send_keys("맞춤법검사기") is used to insert text into the search bar. 
+        <br>text.send_keys(Keys.RETURN) is used to press ENTER.
+        <img src="https://meanbork.github.io/images/firstblck1.JPG" alt="hi" class="inline"/>
+        </h5>
+      <p class="w3-text-grey">I wonder if I can do this with newspaper module instead of beautifulsoup?</p>
+    </div>
+  </div>
+</div>  
+  
+<!-- Third Grid -->
+<div class="w3-row-padding w3-padding-64 w3-container">
+  <div class="w3-content">
+    <div class="w3-twothird">
+      <h1>BeautifulSoup</h1>
+      <h5 class="w3-padding-32">I gave it a quick test run. Also to see where the output/returned text is on the source.
+        <br>I purposely inserted "월요일이제일싫어" with no spaces just to see if it will get fixed. And it does! Goodjob Allen.
+        <br>With the main goal achieved, I worked on how to retrieve the output. Looks like its under p class="_result_text stand_txt".
+        <br>So this is where BeautifulSoup came in.
+        <br>And here is saved image Allen. Your welcome.
+      </h5>
+          <img src="https://meanbork.github.io/images/corrected1.JPG" alt="hi" width="1500" height="210"/>
+      <p class="w3-text-grey">I honestly wasn't 100% sure how to space out "월요일이제일싫어". Is it "월요일 이 제일 싫어"? or "월요일 이 제일싫어"? Turns out I was wrong on both</p>
+    </div>
+  </div>
+</div>
+
+<!-- Fourth Grid -->
+<div class="w3-row-padding w3-light-grey w3-padding-64 w3-container">
+  <div class="w3-content">
+    <div class="w3-twothird">
+      <h1>Done</h1>
+      <h5 class="w3-padding-32">parse is created to look into page_source -> p class="_result_text stand_txt".
+        <br>And that is pretty much it! I saved in under your webproject folder.
+        <img src="https://meanbork.github.io/images/done1.JPG" alt="hi" class="inline"/>
+        </h5>
+      <p class="w3-text-grey">time.sleep() was used because the script was too fast compared to the webpage loading. The script returned with element not found because
+      the page wasn't even loaded.</p>
+    </div>
+  </div>
+</div> 
+  
+<div class="w3-container w3-black w3-center w3-opacity w3-padding-64">
+    <h1 class="w3-margin w3-xlarge">Bingo Bango</h1>
+</div>
+
+<!-- Footer -->
+<footer class="w3-container w3-padding-64 w3-center w3-opacity">  
+  <div class="w3-xlarge w3-padding-32">
+  <a href="https://www.linkedin.com/in/allen-lee-34a798172/" target="_blank">
+    <i class="fa fa-linkedin w3-hover-opacity"></i>
+ </div>
+ <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank">w3.css</a></p>
+</footer>
+
+<script>
+//small screen convertion
+function convFunction() {
+  var x = document.getElementById("navDemo");
+  if (x.className.indexOf("w3-show") == -1) {
+    x.className += " w3-show";
+  } else { 
+    x.className = x.className.replace(" w3-show", "");
+  }
+}
+//dropbar show & hide
+function dropFunction() {
+  document.getElementById("myDropdown").classList.toggle("show");
+}
+//if clicked outside of dropdown, exit
+window.onclick = function(e) {
+  if (!e.target.matches('.dropbtn')) {
+  var myDropdown = document.getElementById("myDropdown");
+    if (myDropdown.classList.contains('show')) {
+      myDropdown.classList.remove('show');
+    }
+  }
+}
+</script> 
+
+</body>
+</html>
